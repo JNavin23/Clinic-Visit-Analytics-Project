@@ -1,0 +1,56 @@
+CREATE DATABASE  IF NOT EXISTS `clinic_visits_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `clinic_visits_db`;
+-- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: clinic_visits_db
+-- ------------------------------------------------------
+-- Server version	8.0.34
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `doctors`
+--
+
+DROP TABLE IF EXISTS `doctors`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `doctors` (
+  `Doctor_ID` text,
+  `Doctor_Name` text,
+  `Experience_Years` int DEFAULT NULL,
+  `Speciality` text,
+  `Assigned_Clinic` text,
+  `Days_Available` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `doctors`
+--
+
+LOCK TABLES `doctors` WRITE;
+/*!40000 ALTER TABLE `doctors` DISABLE KEYS */;
+INSERT INTO `doctors` VALUES ('D001','Travis Scott',32,'General','C015','Sat, Fri, Tue, Wed, Thu'),('D002','Nichole Solomon MD',28,'Cardiology','C020','Wed, Tue, Sat, Mon, Thu, Fri'),('D003','Christina Lee',19,'General','C025','Mon, Sat, Tue, Fri, Thu, Wed'),('D004','Ryan Trujillo',28,'General','C003','Thu, Sat, Mon'),('D005','Michael Harrison',25,'Dermatology','C021','Fri, Thu, Sat, Tue, Wed, Mon'),('D006','Kevin Taylor',22,'Dermatology','C008','Fri, Thu, Wed'),('D007','Daniel Henry',31,'Pediatrics','C023','Thu, Fri, Wed'),('D008','Monica Buck',13,'General','C006','Tue, Thu, Fri, Wed'),('D009','Joseph Raymond',16,'Cardiology','C003','Wed, Fri, Thu, Sat'),('D010','Mike Garrison',15,'Pediatrics','C008','Wed, Fri, Thu, Mon, Sat'),('D011','Sarah Hubbard',2,'General','C007','Thu, Sat, Mon, Fri, Tue, Wed'),('D012','Elizabeth Campbell',16,'Dermatology','C025','Tue, Wed, Thu, Mon'),('D013','Denise Moody',21,'General','C019','Sat, Fri, Mon, Wed, Tue, Thu'),('D014','Cassie Shepherd',18,'Dermatology','C013','Fri, Wed, Thu'),('D015','Willie Dennis',1,'Pediatrics','C013','Tue, Thu, Wed'),('D016','Dr. Beth Stevens',26,'Dermatology','C011','Sat, Mon, Wed, Fri'),('D017','Suzanne Woodward',31,'General','C004','Thu, Sat, Mon'),('D018','Michael Torres',30,'Pediatrics','C022','Sat, Thu, Mon, Fri'),('D019','William Edwards',23,'Pediatrics','C012','Tue, Thu, Mon'),('D020','Nathaniel Moore',22,'Dermatology','C023','Thu, Sat, Tue, Wed, Mon, Fri'),('D021','Kimberly Chapman',15,'Pediatrics','C019','Mon, Sat, Thu, Wed, Tue, Fri'),('D022','Kimberly Becker',17,'General','C007','Thu, Tue, Fri'),('D023','Nicholas Pollard',25,'Pediatrics','C015','Thu, Tue, Wed, Fri, Mon, Sat'),('D024','James Baker',15,'Cardiology','C008','Mon, Thu, Sat, Fri, Wed'),('D025','Henry Strickland',4,'General','C019','Thu, Wed, Fri, Tue'),('D026','Donna Thomas',20,'Cardiology','C013','Sat, Tue, Thu'),('D027','Taylor Cooper',11,'Pediatrics','C024','Wed, Tue, Fri'),('D028','Mary Moran',34,'Pediatrics','C008','Fri, Tue, Sat, Thu, Mon'),('D029','Bryan Johnson',32,'Pediatrics','C024','Fri, Tue, Wed, Mon, Thu'),('D030','Kristine Wood',7,'Dermatology','C004','Tue, Mon, Fri, Wed, Thu'),('D031','Jillian Bautista',13,'Dermatology','C011','Thu, Mon, Tue, Wed, Fri, Sat'),('D032','Michael Young',22,'Dermatology','C003','Thu, Sat, Fri, Mon'),('D033','Tiffany Greene',3,'Cardiology','C019','Wed, Sat, Tue, Thu'),('D034','Tammy Andrews',19,'Pediatrics','C020','Mon, Fri, Thu, Tue'),('D035','Jerome Keith',26,'Cardiology','C015','Wed, Thu, Tue, Fri, Mon, Sat'),('D036','Julie Smith',21,'General','C008','Sat, Thu, Tue, Wed, Mon, Fri'),('D037','Michael Hayden',2,'General','C019','Tue, Wed, Thu'),('D038','Michael Nunez',4,'Dermatology','C003','Tue, Wed, Mon, Fri, Sat'),('D039','Paul Boyd',23,'Pediatrics','C005','Wed, Mon, Sat, Tue, Thu, Fri'),('D040','Anthony Morales',11,'Cardiology','C011','Wed, Mon, Thu, Tue, Fri, Sat'),('D041','Thomas Parker',32,'General','C019','Thu, Wed, Tue, Mon, Sat'),('D042','Deborah Lewis',10,'General','C023','Fri, Tue, Sat, Mon, Wed, Thu'),('D043','Erika Nelson',29,'Cardiology','C021','Thu, Sat, Mon'),('D044','Dustin Martinez',34,'Dermatology','C024','Wed, Sat, Tue, Thu, Fri, Mon'),('D045','Mr. Anthony Taylor',25,'Dermatology','C007','Wed, Thu, Sat, Mon, Tue'),('D046','Amanda Warren',4,'Pediatrics','C024','Tue, Mon, Wed, Thu, Sat'),('D047','Eric Henderson',8,'Dermatology','C016','Tue, Sat, Thu, Mon, Fri, Wed'),('D048','Audrey Mitchell',17,'Dermatology','C015','Fri, Mon, Tue, Wed, Sat'),('D049','Joel Santos',18,'Pediatrics','C001','Fri, Thu, Wed, Tue'),('D050','Holly Rodriguez',24,'General','C016','Thu, Tue, Wed'),('D051','Patrick Thomas',16,'General','C017','Tue, Fri, Mon, Wed, Thu'),('D052','Christine Williams',17,'Dermatology','C025','Wed, Mon, Fri, Thu, Sat'),('D053','Michael Cruz',23,'Cardiology','C008','Wed, Thu, Fri, Tue, Mon, Sat'),('D054','Mrs. Krystal Gonzalez',5,'Dermatology','C001','Thu, Fri, Sat, Tue'),('D055','Rebecca Maldonado',2,'Cardiology','C020','Tue, Fri, Mon, Wed'),('D056','Kelly Martinez',22,'Pediatrics','C022','Thu, Tue, Mon'),('D057','Shawn Wang',7,'General','C014','Wed, Fri, Thu, Mon, Tue, Sat'),('D058','Mary Brooks',1,'Dermatology','C007','Fri, Tue, Sat, Thu, Mon, Wed'),('D059','Kevin Mcclain',29,'General','C025','Mon, Wed, Tue, Fri, Thu, Sat'),('D060','Dr. Amy Reyes',9,'Cardiology','C023','Mon, Fri, Wed, Thu, Tue'),('D061','Crystal Duran',25,'Dermatology','C014','Thu, Sat, Wed, Fri'),('D062','Michelle Black',26,'Pediatrics','C004','Wed, Mon, Sat'),('D063','Ashley Estrada',15,'Pediatrics','C018','Sat, Mon, Wed'),('D064','Nicole Young',10,'Cardiology','C024','Fri, Thu, Wed, Tue, Sat, Mon'),('D065','Katherine Monroe',10,'Pediatrics','C014','Wed, Sat, Fri, Mon, Thu'),('D066','Matthew Turner',6,'Cardiology','C008','Thu, Mon, Sat, Fri, Wed, Tue'),('D067','David Hill',2,'Dermatology','C010','Sat, Tue, Wed, Fri'),('D068','Steven Shaw',21,'Cardiology','C018','Wed, Mon, Tue, Fri'),('D069','Patrick Mcpherson',31,'General','C009','Sat, Wed, Thu, Mon, Fri'),('D070','Kelly Campbell',29,'Cardiology','C017','Sat, Mon, Fri, Wed, Tue, Thu'),('D071','Krista Ortega',5,'General','C019','Fri, Tue, Thu, Sat, Wed'),('D072','Dr. Maria Martin',3,'Cardiology','C012','Mon, Tue, Sat, Fri'),('D073','Tyler Wood',31,'General','C002','Thu, Mon, Wed, Tue'),('D074','Tina Ramsey',4,'Cardiology','C006','Sat, Mon, Thu, Wed'),('D075','Mr. Zachary Clark',28,'Dermatology','C014','Sat, Mon, Tue, Fri'),('D076','Jackson Salazar',16,'Dermatology','C007','Fri, Sat, Wed, Mon, Tue'),('D077','Taylor Combs',7,'Dermatology','C005','Thu, Fri, Sat, Mon'),('D078','Steve Cummings',26,'Dermatology','C022','Fri, Wed, Sat'),('D079','Samantha Arnold',9,'General','C020','Sat, Mon, Thu, Wed, Tue'),('D080','Rachel Rodriguez',28,'Pediatrics','C018','Wed, Mon, Sat, Fri, Thu'),('D081','Anne Dunn',24,'Pediatrics','C005','Mon, Wed, Thu, Fri'),('D082','Kevin Jones',34,'Dermatology','C018','Fri, Sat, Mon, Tue, Wed, Thu'),('D083','Russell Dunn',30,'General','C008','Thu, Sat, Fri, Wed, Tue'),('D084','David Silva',19,'Pediatrics','C023','Sat, Thu, Wed, Fri, Tue'),('D085','April Estes',31,'Dermatology','C021','Tue, Fri, Thu'),('D086','Kathy Garcia',34,'General','C010','Mon, Tue, Wed, Thu, Sat'),('D087','Kristen Snow',22,'Cardiology','C002','Wed, Tue, Thu, Mon'),('D088','Alexis Roberts',13,'Cardiology','C013','Fri, Mon, Tue, Wed, Thu, Sat'),('D089','Leslie Stark',21,'Cardiology','C025','Wed, Thu, Mon'),('D090','Cody Beltran',26,'General','C023','Tue, Fri, Thu'),('D091','Daniel Clark',17,'General','C023','Sat, Wed, Tue'),('D092','Ashley Flowers',3,'General','C014','Sat, Thu, Wed, Tue'),('D093','Julie Ramirez',28,'Pediatrics','C025','Thu, Mon, Wed, Sat, Tue'),('D094','Kenneth Mathews',2,'Dermatology','C014','Mon, Wed, Thu, Sat, Tue, Fri'),('D095','Michael Brown',34,'Pediatrics','C025','Mon, Sat, Wed, Fri, Tue, Thu'),('D096','William Taylor',20,'Cardiology','C002','Wed, Mon, Tue, Fri, Sat'),('D097','Kathleen Williams',26,'General','C014','Wed, Thu, Tue, Mon, Sat'),('D098','John White',23,'Cardiology','C019','Wed, Fri, Mon, Tue, Sat'),('D099','Ricardo Chang',25,'Dermatology','C014','Mon, Wed, Sat'),('D100','Michael Rodriguez',23,'Pediatrics','C011','Fri, Mon, Sat, Wed, Thu');
+/*!40000 ALTER TABLE `doctors` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-07-17 14:58:47

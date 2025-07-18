@@ -1,0 +1,26 @@
+Clinic_ID,Clinic_Name,Location,No_of_Doctors,Available_Beds,Speciality,Area_Type
+C001,Harris Clinic,Shawnbury,8,16,General,Rural
+C002,Valdez Clinic,East Lorifort,5,7,General,Urban
+C003,Wilson Clinic,Kristenberg,5,11,General,Rural
+C004,Hebert Clinic,East Christophermouth,6,8,Pediatrics,Rural
+C005,Brooks Clinic,Williamtown,9,19,Pediatrics,Rural
+C006,Jimenez Clinic,West Susan,5,15,Dermatology,Rural
+C007,Alvarado Clinic,Jenniferstad,7,11,Dermatology,Urban
+C008,King Clinic,South Brandon,5,19,Dermatology,Rural
+C009,Day Clinic,New Crystal,4,16,Dermatology,Urban
+C010,Phillips Clinic,Lake Marissa,8,16,Pediatrics,Rural
+C011,Robinson Clinic,Lake Timothy,7,6,Pediatrics,Rural
+C012,Chavez Clinic,Lake Craigmouth,3,5,General,Urban
+C013,Martinez Clinic,Port Michellefort,5,19,Dermatology,Urban
+C014,Jackson Clinic,Franciscoside,6,14,Pediatrics,Rural
+C015,Clark Clinic,East Dianaton,5,9,Pediatrics,Rural
+C016,Rivera Clinic,Lake Elizabethland,8,14,General,Rural
+C017,Lee Clinic,Lake Erinview,7,12,Pediatrics,Rural
+C018,Bray Clinic,Jessicastad,9,9,Cardiology,Rural
+C019,Davidson Clinic,Port Caitlinland,3,7,Pediatrics,Rural
+C020,Fowler Clinic,Pereztown,8,9,Dermatology,Rural
+C021,Harrell Clinic,Lake Scott,4,8,Pediatrics,Urban
+C022,Quinn Clinic,Brownberg,9,18,Dermatology,Rural
+C023,Rodriguez Clinic,Williamsport,8,9,General,Rural
+C024,Stewart Clinic,Erikafort,8,8,General,Urban
+C025,Williams Clinic,East Rachael,5,6,General,Urban
